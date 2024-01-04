@@ -1,0 +1,30 @@
+
+
+###
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/pessoas/62fce659-23a3-461c-9712-8b6bbef9807f
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/contagem-pessoas
+Accept: application/json
+
+
+###
+
+
+GET http://127.0.0.1:8000/pessoas?filter=fag
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/pessoas
+Content-Type: application/json
+
+  {
+    "nome": "Fagner",
+    "apelido": "faguinho",
+    "nascimento": "2024-01-04"
+  }
